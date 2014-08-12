@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <id>urn:iweb:2981BDF8-D3C7-4D6E-81D6-D0EC57EC5DDD</id>
+ <title>Page list Atom feed</title>
+ <updated>2014-07-29T14:28:55+01:00</updated>
+ <link rel="self" href="feed.xml"/>
+ <generator>iWeb</generator>
+ <author>
+  <name>iWeb</name>
+ </author>
+ <entry>
+  <id>urn:iweb:79599565-4419-4A6E-B84C-8965D48BD1D8</id>
+  <title>Teaching</title>
+  <title xmlns="urn:iweb:">Teaching</title>
+  <in-navbar xmlns="urn:iweb:">79599565-4419-4A6E-B84C-8965D48BD1D8</in-navbar>
+  <link rel="alternate" href="Teaching.html"/>
+  <updated>2014-07-29T14:28:55.001+01:00</updated>
+  <content>Teaching</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:4C4CBC61-C29E-4212-ACD7-B8E40CD9DC04</id>
+  <title>Links</title>
+  <title xmlns="urn:iweb:">Links</title>
+  <in-navbar xmlns="urn:iweb:">4C4CBC61-C29E-4212-ACD7-B8E40CD9DC04</in-navbar>
+  <link rel="alternate" href="Links.html"/>
+  <updated>2014-07-29T14:28:55.002+01:00</updated>
+  <content>Links</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:F278E420-899C-4D4E-93F3-9B1C3094CE59</id>
+  <title>Contact</title>
+  <title xmlns="urn:iweb:">Contact</title>
+  <in-navbar xmlns="urn:iweb:">F278E420-899C-4D4E-93F3-9B1C3094CE59</in-navbar>
+  <link rel="alternate" href="Contact.html"/>
+  <updated>2014-07-29T14:28:55.003+01:00</updated>
+  <content>Contact</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:E7404DE2-E245-4052-A5D0-34D74117EA03</id>
+  <title>Research</title>
+  <title xmlns="urn:iweb:">Research</title>
+  <in-navbar xmlns="urn:iweb:">E7404DE2-E245-4052-A5D0-34D74117EA03</in-navbar>
+  <link rel="alternate" href="Research.html"/>
+  <updated>2014-07-29T14:28:55.004+01:00</updated>
+  <content>Research</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:A44A2FD7-E04E-4437-B98A-43989E975E79</id>
+  <title>Publications</title>
+  <title xmlns="urn:iweb:">Publications</title>
+  <in-navbar xmlns="urn:iweb:">A44A2FD7-E04E-4437-B98A-43989E975E79</in-navbar>
+  <link rel="alternate" href="Publications.html"/>
+  <updated>2014-07-29T14:28:55.005+01:00</updated>
+  <content>Publications</content>
+ </entry>
+</feed>
