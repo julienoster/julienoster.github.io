@@ -6,7 +6,7 @@
   <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     
     <meta name="Generator" content="iWeb 3.0.4" />
-    <meta name="iWeb-Build" content="local-build-20140812" />
+    <meta name="iWeb-Build" content="local-build-20150306" />
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
     <meta name="viewport" content="width=1024" />
     <title>Research</title>
@@ -70,41 +70,62 @@
           
 
 
-          <div id="id4" style="height: 658px; left: 266px; position: absolute; top: 138px; width: 752px; z-index: 1; " class="style_SkipStroke_1 shape-with-text">
-            <div class="text-content graphic_textbox_layout_style_default_External_752_658" style="padding: 0px; ">
+          <div id="id4" style="height: 2388px; left: 266px; position: absolute; top: 138px; width: 752px; z-index: 1; " class="style_SkipStroke_1 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_752_2388" style="padding: 0px; ">
               <div class="graphic_textbox_layout_style_default">
                 <p style="padding-top: 0pt; " class="paragraph_style_5">I have been involved in many projects, you will find below a small description of some of them<br /></p>
                 <p class="paragraph_style_5"><br /></p>
                 <p class="paragraph_style_6">ECG in MRI<br /></p>
                 <p class="paragraph_style_6"><br /></p>
-                <p class="paragraph_style_5">My first project is the processing of ECG signals acquired in a MRI environment. The ECG is corrupted by different artefacts induced by the magnetic field gradients or by the MagnetoHydrodynamic effect, which is induced by the blood flow in a large magnetic field.<br /></p>
+                <p class="paragraph_style_5">ECG signals are regularly acquired during a MRI examination, mainly for two reasons: (i) monitoring of the patient (ii) synchronisation of image acquisition with the heart activity. The ECG is nevertheless corrupted by different artefacts induced by (i) the magnetic field gradients or (ii) by the MagnetoHydrodynamic effect, which is induced by the blood flow in a large magnetic field.<br /></p>
+                <div class="paragraph paragraph_style_5"><div style="height: 169px; width: 742px;  clear: left; float: left; height: 169px; margin: 6px 6px 6px 0px; position: relative; width: 742px; " class="tinyText style_SkipStroke_3 inline-block stroke_0"><img src="Research_files/MR_ECG.png" alt="" style="border: none; height: 169px; width: 743px; " /></div>The processing of the ECG signals is therefore required in order to ensure accurate peak detection and monitoring. I have proposed a Bayesian filtering approach for both the reduction of the magnetic field gradients and the suppression of the MagnetoHydrodynamic effect.<br /></div>
                 <p class="paragraph_style_5"><br /></p>
                 <p class="paragraph_style_5"><a class="class5" title="" href="">back on top</a><br /></p>
                 <p class="paragraph_style_5"><br /></p>
                 <p class="paragraph_style_6">Signal Quality<br /></p>
                 <p class="paragraph_style_5"><br /></p>
-                <p class="paragraph_style_5">ECG is often corrupted with noise, the automatic analysis of this signal requires therefore to know how much it can be trusted.<br /></p>
-                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5">One of the main problematic of physiological signal processing is the presence of noise, which can impact any automatic analysis and lead to false diagnostic or decision. We have decided to deal with this problem by developing a technique for the estimation of the Signal Quality Index (SQI). This technique is based on a machine learning approach, and several “basic” SQI are nonlinearly mixed in order to form an accurate estimation of the signal quality. More importantly, we have evaluated this approach several datasets containing pathological data, as such SQI should be robust to pathological data.<br /></p>
+                <p class="paragraph_style_5">We have also recently demonstrated the strength of this approach by winning the Physionet/Computing in Cardiology 2014. A multimodal heart beat detector was developed, with an heuristic switching between the different available signals based on SQIs. <br /></p>
+                <div class="paragraph paragraph_style_5"><div style="height: 350px; width: 742px;  clear: left; float: left; height: 350px; margin: 6px 6px 6px 0px; position: relative; width: 742px; " class="tinyText style_SkipStroke_3 inline-block stroke_0"><img src="Research_files/ExampleSQI_112-2.png" alt="" style="border: none; height: 350px; width: 743px; " /></div><br /></div>
                 <p class="paragraph_style_5"><a class="class6" title="" href="">back on top</a><br /></p>
                 <p class="paragraph_style_5"><br /></p>
                 <p class="paragraph_style_7">Arrhythmia Detection<br /></p>
                 <p class="paragraph_style_7"><br /></p>
-                <p class="paragraph_style_5">Analysis of the ECG implies the recognition of abnormal rhythms, induced either in the atria or the ventricles.<br /></p>
-                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5">Analysis of the ECG implies the recognition of abnormal rhythms. Such abnormal rhythms can be induced either in the atria or the ventricles, and they will have different properties.<br /></p>
+                <p class="paragraph_style_5">For example, Atrial Fibrillation (AF) is the most common cardiac arrhythmia, and its prevalence is increasing with age. AF is associated with irregular and unpredictable RR intervals, due to a chaotic firing of the Atrioventricular node. We have developed a machine learning approach, mixing several features of RR unpredictability, to detect short episodes of AF on RR interval time-series.<br /></p>
+                <p class="paragraph_style_5">We have also recently developed a Bayesian filtering approach for the detection of Ventricular beats. This technique is based on the model of the ECG morphology, which is estimated for both normal and ventricular beats, and a Switching Kalman filter is applied on the data for simultaneous signal denoising and beat detection. The introduction of an additional “X-Factor” mode allows for the exclusion of noisy or unknown heartbeats.<br /></p>
+                <div class="paragraph paragraph_style_5"><div style="height: 190px; width: 742px;  clear: left; float: left; height: 190px; margin: 6px 6px 6px 0px; position: relative; width: 742px; " class="tinyText style_SkipStroke_3 inline-block stroke_0"><img src="Research_files/figure1.jpg" alt="" style="border: none; height: 190px; width: 743px; " /></div><br /></div>
                 <p class="paragraph_style_5"><a class="class7" title="" href="">back on top</a><br /></p>
                 <p class="paragraph_style_5"><br /></p>
                 <p class="paragraph_style_6">mHealth<br /></p>
                 <p class="paragraph_style_6"><br /></p>
-                <p class="paragraph_style_5">We have developed an innovative end-to-end system allowing us to acquire ECG signal on a mobile, analyse the signal, upload the data on a Medical record system, where clinicians can have access to it for further analysis, where annotations from multiple clinicians can be aggregated.<br /></p>
-                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5">We have developed an innovative end-to-end system allowing us to acquire ECG signal on a mobile phone. The ECG signal is then analysed on the phone. This analysis includes heartbeat detection, SQI estimation, and AF detection. The data can then be uploaded on a Medical record system, which can be accessed by clinicians for further analysis, and also where annotations from multiple clinicians can be aggregated.<br /></p>
+                <div class="paragraph paragraph_style_5"><div style="height: 350px; width: 742px;  clear: left; float: left; height: 350px; margin: 6px 6px 6px 0px; position: relative; width: 742px; " class="tinyText style_SkipStroke_3 inline-block stroke_0"><img src="Research_files/ECGappScreenshot.jpg" alt="" style="border: none; height: 350px; width: 743px; " /></div><br /></div>
                 <p class="paragraph_style_5"><a class="class8" title="" href="">back <span>on</span> top</a><br /></p>
                 <p class="paragraph_style_5"><br /></p>
                 <p class="paragraph_style_6">Foetal ECG<br /></p>
                 <p class="paragraph_style_6"><br /></p>
-                <p class="paragraph_style_5">I have been heavily involved on a foetal ECG project. We proposed accurate and innovative techniques for the extraction of foetal R peaks from maternal abdominal recordings. We have also developed a realistic model of foetal ECG recordings. Finally, we have also proposed new techniques for the analysis of the FECG morphology, especially QT measurement.  <br /></p>
+                <p class="paragraph_style_5">I have also been involved in a foetal ECG project. We proposed accurate and innovative techniques for the extraction of foetal R peaks from maternal abdominal recordings. We have been involved in the organisation of the Physionet/Computing in Cardiology 2013, in which we have also taken part. We have been unofficial winners of the events 1 and 2.<br /></p>
+                <p class="paragraph_style_5">We have also developed a realistic model of foetal ECG recordings. This code has been made available on Physionet, under the name <a onclick="window.open(this.href); return false;" title="http://physionet.org/physiotools/ipmcode/" href="http://physionet.org/physiotools/ipmcode/" onkeypress="window.open(this.href); return false;" class="class9"><span class="style_1">FECGSyn</span></a>. <br /></p>
+                <div class="paragraph paragraph_style_5"><div style="height: 200px; width: 259px;  clear: left; float: left; height: 200px; margin: 6px 6px 6px 0px; position: relative; width: 259px; " class="tinyText style_SkipStroke_3 inline-block stroke_0"><img src="Research_files/FrenchFlag.png" alt="" style="border: none; height: 200px; width: 259px; " /></div><br /></div>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_5">Finally, we have also proposed new techniques for the analysis of the FECG morphology, especially QT measurement.  <br /></p>
                 <p class="paragraph_style_8"><br /></p>
-                <p style="padding-bottom: 0pt; " class="paragraph_style_5"><a class="class9" title="" href="">back on top</a></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_5"><a class="class10" title="" href="">back on top</a></p>
               </div>
+              <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"> </div>
             </div>
           </div>
           
@@ -138,7 +159,7 @@
           
 
 
-          <div style="height: 2px; width: 752px;  height: 0px; left: 266px; position: absolute; top: 329px; width: 752px; z-index: 1; " class="tinyText">
+          <div style="height: 2px; width: 752px;  height: 0px; left: 266px; position: absolute; top: 574px; width: 752px; z-index: 1; " class="tinyText">
             <div style="position: relative; width: 752px; ">
               <img src="Research_files/shapeimage_4.jpg" alt="" style="height: 2px; left: 0px; margin-top: -1px; position: absolute; top: 0px; width: 752px; " />
             </div>
@@ -146,7 +167,7 @@
           
 
 
-          <div style="height: 2px; width: 752px;  height: 0px; left: 266px; position: absolute; top: 442px; width: 752px; z-index: 1; " class="tinyText">
+          <div style="height: 2px; width: 752px;  height: 0px; left: 266px; position: absolute; top: 2067px; width: 752px; z-index: 1; " class="tinyText">
             <div style="position: relative; width: 752px; ">
               <img src="Research_files/shapeimage_5.jpg" alt="" style="height: 2px; left: 0px; margin-top: -1px; position: absolute; top: 0px; width: 752px; " />
             </div>
@@ -154,7 +175,7 @@
           
 
 
-          <div style="height: 2px; width: 752px;  height: 0px; left: 266px; position: absolute; top: 538px; width: 752px; z-index: 1; " class="tinyText">
+          <div style="height: 2px; width: 752px;  height: 0px; left: 266px; position: absolute; top: 1578px; width: 752px; z-index: 1; " class="tinyText">
             <div style="position: relative; width: 752px; ">
               <img src="Research_files/shapeimage_6.jpg" alt="" style="height: 2px; left: 0px; margin-top: -1px; position: absolute; top: 0px; width: 752px; " />
             </div>
@@ -162,12 +183,12 @@
           
 
 
-          <div style="height: 2px; width: 752px;  height: 0px; left: 266px; position: absolute; top: 675px; width: 752px; z-index: 1; " class="tinyText">
+          <div style="height: 2px; width: 752px;  height: 0px; left: 266px; position: absolute; top: 1144px; width: 752px; z-index: 1; " class="tinyText">
             <div style="position: relative; width: 752px; ">
               <img src="Research_files/shapeimage_7.jpg" alt="" style="height: 2px; left: 0px; margin-top: -1px; position: absolute; top: 0px; width: 752px; " />
             </div>
           </div>
-          <div style="height: 796px; line-height: 796px; " class="spacer"> </div>
+          <div style="height: 2526px; line-height: 2526px; " class="spacer"> </div>
         </div>
         <div style="height: 150px; margin-left: 0px; position: relative; width: 1024px; z-index: 15; " id="footer_layer">
           <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
